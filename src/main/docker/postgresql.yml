@@ -1,0 +1,11 @@
+version: '2'
+services:
+  simplejobhistory-postgresql:
+    image: postgres:11.6
+    # volumes:
+    #     - ~/volumes/jhipster/simplejobhistory/postgresql/:/var/lib/postgresql/data/
+    environment:
+      - POSTGRES_USER=simplejobhistory
+      - POSTGRES_PASSWORD=
+    ports:
+      - 5432:5432
